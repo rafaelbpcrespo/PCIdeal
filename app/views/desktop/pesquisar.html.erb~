@@ -1,0 +1,6 @@
+<h1>Desktop#pesquisar</h1>
+<p>Find me in app/views/desktop/pesquisar.html.erb</p>
+
+
+<%=h @q %>
+

@@ -1,0 +1,50 @@
+<%= stylesheet_link_tag 'desktop' %>
+
+<h1>O que você vai usar no seu desktop?</h1>
+
+<% form_tag(pesquisar_path, :method => "post") do %>
+ <fieldset id="basico">
+<legend>Básico</legend>
+<%= check_box_tag(:navegarNaInternet) %>
+<%= label_tag(:navegarNaInternet, "Navegar na internet") %>
+</br>
+<%= check_box_tag(:editoresDeTexto) %>
+<%= label_tag(:editoresDeTexto, "Digitar e editar textos e planilhas") %>
+</br>
+<%= check_box_tag(:jogosLeves) %>
+<%= label_tag(:jogosLeves, "Divertir-se com jogos clássicos") %>
+</br>
+<%= check_box_tag(:editarVideosEImagensAmador) %>
+<%= label_tag(:editarVideosEImagensAmador, "Edição amadora de vídeos e imagens") %>
+</fieldset>
+<fieldset id="medio">
+<legend>Médio</legend>
+<%= check_box_tag(:downloads) %>
+<%= label_tag(:downloads, "Baixar muitas músicas e vídeos") %>
+</br>
+<%= check_box_tag(:assistirFilmes) %>
+<%= label_tag(:assistirFilmes, "Assistir filmes") %>
+</br>
+<%= check_box_tag(:executarProgramasSimultaneamente) %>
+<%= label_tag(:executarProgramasSimultaneamente, "Executar vários programas simultaneamente") %>
+</fieldset>
+<fieldset id="avancado">
+<legend>Avançado</legend>
+<%= check_box_tag(:editarVideosEImagensProfissional) %>
+<%= label_tag(:editarVideosEImagensProfissional, "Edição profissional de vídeos e imagens") %>
+</br>
+<%= check_box_tag(:jogosPesados) %>
+<%= label_tag(:jogosPesados, "Divertir-se com jogos de última geração") %>
+</br>
+<%= check_box_tag(:assistirFilmesEmAltaDefinicao) %>
+<%= label_tag(:assistirFilmesEmAltaDefinicao, "Assistir filmes em alta definição") %>
+</br>
+</fieldset>
+</br>
+<%= label_tag(:nome, "Seu nome:") %>
+<%= text_field_tag(:q) %>
+ <%= submit_tag("Quero a sugestão!") %>
+
+
+<% end %>
+
