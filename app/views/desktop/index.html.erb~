@@ -27,12 +27,13 @@
 </br>
 <%= check_box_tag(:executarProgramasSimultaneamente) %>
 <%= label_tag(:executarProgramasSimultaneamente, "Executar vários programas simultaneamente") %>
+</br>
+</br>
 </fieldset>
 <fieldset id="avancado">
 <legend>Avançado</legend>
 <%= check_box_tag(:editarVideosEImagensProfissional) %>
 <%= label_tag(:editarVideosEImagensProfissional, "Edição profissional de vídeos e imagens") %>
-
 </br>
 <%= check_box_tag(:jogosPesados) %>
 <%= label_tag(:jogosPesados, "Divertir-se com jogos de última geração") %>
@@ -40,11 +41,30 @@
 <%= check_box_tag(:assistirFilmesEmAltaDefinicao) %>
 <%= label_tag(:assistirFilmesEmAltaDefinicao, "Assistir filmes em alta definição") %>
 </br>
+</br>
 </fieldset>
+<fieldset id="monitor">
+<legend>Monitor</legend>
+COLOCAR JAVASCRIPT AQUI PARA CASO SELCIONE SIM, APARECER AS OPÇÕES DE MONITOR!!!!!!
+Tipo de Monitor:
+</br> 
+</br>
+<input name="tipoMonitor" type="radio" value="LCD" checked>LCD
+<input name="tipoMonitor" type="radio" value="CRT">CRT
+</br></br>
+Tamanho do monitor: 
+</br>
+<input name="tamanho" type="radio" value="15 polegadas" checked>15 polegadas</br>
+<input name="tamanho" type="radio" value="17 polegadas" >17 polegadas</br>
+<input name="tamanho" type="radio" value="19 polegadas" >19 polegadas
+</br>
+</fieldset>
+</br>
+<div id="nomeDoCliente">
 <%= label_tag(:nome, "Seu nome:") %>
-<%= text_field_tag(:q) %>
- <%= submit_tag("Quero a sugestão!") %>
-
+<%= text_field_tag(:nome) %>
+<%= submit_tag("Quero a sugestão!") %>
+</div>
 
 <% end %>
 
